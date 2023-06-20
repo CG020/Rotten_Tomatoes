@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* TODO: Add any and all needed styles here */
+body {
+	background-image: url("images/moviebg.png");
+}
+
+.gridContainer {
+	display: grid;
+	background-color: lightgray;
+	margin: auto;
+	border: darkgray 2px solid;
+	width: 980px;
+	height: 940px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px gray;
+	overflow: hidden;
+}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.rating {
+	grid-column: 1 / span 3;
+	grid-row: 1;
+   background-image: url("images/rottenlargebg.png");
+   height: 83px;
+   margin-top: 0px;
+}
+
+.ratingNumber {
+	padding-top: 44px;
+	font-size: 3em;
+	color: red;
+	font-weight: bold;
+	font-family: sans-serif;
+	height: inherit;
+	position: relative;
+	vertical-align: top;
+	padding: 0px 0.5em; 
+}
+
+.image {
+	grid-column: 3;
+	grid-row: 1 / span 2;
+}
+
+.subimage img {
+	height: 351px;
+	width: 255px;
+	/*float: right;*/
+	margin-right: -5px;
+}
+
+.reviewsLeft {
+	grid-column: 1;
+	grid-row: 2 / span 1;
+	margin: 5px;
+}
+
+.reviewsBox {
+	background-color: white;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: darkgray;
+	padding: 14px;
+	max-width: 310px;  
+	min-height: 25px; 
+	font-size: 0.9em;
+	font-family: Georgia, "Times New Roman";
+}
+
+.reviewer {
+	height: 40px;
+	width: 295px;
+	font-size: 0.9em;
+    margin-top: -10px;
+}
+
+.reviewsRight {
+	grid-column: 2;
+	grid-row: 2 / span 1;
+	margin: 5px;
+}
+
+.overview {
+	grid-column: 3;
+	grid-row: 3 / span 2;
+	margin-top: -497px;
+	/* height: 400px; 
+	width: 200px; */
+}
+
+.overviewDetails {
+	margin-top: -3px;
+	width: 236px;
+	font-size: 1em;
+	height: 700px;
+	/*float: right;*/
+	background-color: #8FBC8F;
+	padding: 7px;
+	overflow: hidden;
+}
+
+
+.top {
+	background-image: url("images/rancidbannerbg.png");
+    height: 50px;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 2px 2px #909090;
+}
+
+img {
+	vertical-align: top;
+	/*float: left;*/
+	margin-right: 5px;
+}
+
+dt, dd {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+dt {
+	padding-top: 7px;
+	font-weight: bold;
+}
+
+
